@@ -8,6 +8,7 @@ const initialState = {
   error: '',
 };
 export const getAqi = createAsyncThunk(GET_AQI, async (location) => {
+  // eslint-disable-next-line max-len
   const response = await getGeoLocation(location).then((response) => getQuality(response[0].lat, response[0].lon));
   return response;
 });
