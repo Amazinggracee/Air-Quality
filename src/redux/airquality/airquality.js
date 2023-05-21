@@ -1,5 +1,5 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import getQuality from '../../APIs/airQualityApi';
+import getQuality from '../../APIs/airApi';
 import getGeoLocation from '../../APIs/geoLocationApi';
 
 const GET_AQI = 'POLLUTIONCHECK/airquality/GET_AQI';
