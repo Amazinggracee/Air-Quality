@@ -1,23 +1,23 @@
 import { useSelector } from 'react-redux';
 import { MdOutlineKeyboardBackspace } from 'react-icons/md';
 import { useNavigate } from 'react-router-dom';
-import AqiQuality from './AqiQuality';
-import AqiComponentTable from './AqiComponentTable';
+import AirQuality from './AirQuality';
+import AirCondition from './AirCondition';
 import { resetState } from '../redux/airquality/airquality';
 
-const AqiDetail = () => {
+const AirDetail = () => {
   const navigate = useNavigate();
   const dispatch = useNavigate();
-  const aqiData = useSelector((state) => state.AqiSlice.aqi);
+  const airData = useSelector((state) => state.AirSlice.air);
   const location = useSelector((state) => state.LocationSlice);
-  const coordinates = aqiData
-    ? `\u00A0\u00A0\u00A0\u00A0${aqiData.coord.lat}°,\u00A0\u00A0\u00A0\u00A0${aqiData.coord.lon}°`
+  const coordinates = airData
+    ? `\u00A0\u00A0\u00A0\u00A0${airData.coord.lat}°,\u00A0\u00A0\u00A0\u00A0${airData.coord.lon}°`
     : 'Not found';
   const locationName = location ? location[0].name : 'Not found';
   const locationState = location ? location[0].state : 'Not found';
   const { country } = location ? location[0] : 'Not found';
-  const { components } = aqiData ? aqiData.list[0] : 'Not found';
-  const { aqi } = aqiData ? aqiData.list[0].main : 'Not found';
+  const { components } = airData ? airData.list[0] : 'Not found';
+  const { air } = airData ? airData.list[0].main : 'Not found';
   const onClickHandler = () => {
     dispatch(resetState());
     navigate('/', { state: { message: 'Reset page' } });
@@ -25,8 +25,8 @@ const AqiDetail = () => {
 
   return (
     <div>
-      {aqiData ? (
-        <div className="aqi-details">
+      {airData ? (
+        <div className="air-details">
           <button
             className="back-button"
             onClick={() => onClickHandler()}
@@ -64,8 +64,8 @@ const AqiDetail = () => {
             country code :
             {country}
           </p>
-          <AqiQuality aqi={aqi} />
-          <AqiComponentTable components={components} />
+          <AirQuality air={air} />
+          <AirCondition components={components} />
         </div>
       ) : (
         ''
@@ -74,4 +74,4 @@ const AqiDetail = () => {
   );
 };
 
-export default AqiDetail;
+export default AirDetail;

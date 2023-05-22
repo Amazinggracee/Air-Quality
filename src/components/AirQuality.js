@@ -1,11 +1,11 @@
 import { PropTypes } from 'prop-types';
 import { BsCircleFill } from 'react-icons/bs';
 
-const AqiQuality = (props) => {
-  const { aqi } = props;
+const AirQuality = (props) => {
+  const { air } = props;
   let quality;
   let style;
-  switch (aqi) {
+  switch (air) {
     case 1: {
       quality = 'Good';
       style = { color: '#2FB039', fontSize: '1.4rem' };
@@ -39,16 +39,16 @@ const AqiQuality = (props) => {
   }
   return (
     <div className="quality">
-      <h2 className="aqi-quality">
+      <h2 className="air-quality">
         Air Quality Index:&nbsp;&nbsp;
         {quality}
       </h2>
-      <BsCircleFill className="aqi-quality-circle" style={style} />
+      <BsCircleFill className="air-quality-circle" style={style} />
     </div>
   );
 };
 
-AqiQuality.propTypes = {
-  aqi: PropTypes.number.isRequired,
+AirQuality.propTypes = {
+  air: PropTypes.number.isRequired,
 };
-export default AqiQuality;
+export default AirQuality;

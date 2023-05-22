@@ -48,7 +48,7 @@ Object {
           </form>
         </div>
         <div
-          class="aqi-container"
+          class="Air-container"
         />
         <div
           class="cities"
@@ -107,7 +107,7 @@ Object {
         </form>
       </div>
       <div
-        class="aqi-container"
+        class="Air-container"
       />
       <div
         class="cities"

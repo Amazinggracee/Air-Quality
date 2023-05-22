@@ -1,30 +1,30 @@
 import { PropTypes } from 'prop-types';
 import { useNavigate } from 'react-router-dom';
 
-const Aqi = (props) => {
+const Air = (props) => {
   const navigate = useNavigate();
-  const { aqiData, error } = props;
+  const { airData, error } = props;
 
   if (error === 'Cannot read properties of undefined (reading \'lat\')') {
     navigate('/PageNotFound', { state: { message: 'Requested Page not Found' } });
-  } else if (aqiData !== null && aqiData.coord) {
-    navigate('/AqiDetail', { state: { message: 'Requested Page not Found' } });
+  } else if (airData !== null && airData.coord) {
+    navigate('/AirDetail', { state: { message: 'Requested Page not Found' } });
   }
   return (
-    <div className="aqi-container" />
+    <div className="Air-container" />
   );
 };
 
-Aqi.defaultProps = {
-  aqiData: null,
+Air.defaultProps = {
+  airData: null,
   error: null,
 };
-Aqi.propTypes = {
-  aqiData: PropTypes.objectOf(PropTypes.oneOfType([
+Air.propTypes = {
+  airData: PropTypes.objectOf(PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.object,
     PropTypes.array,
   ]).isRequired),
   error: PropTypes.string,
 };
-export default Aqi;
+export default Air;

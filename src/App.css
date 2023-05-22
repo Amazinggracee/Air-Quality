@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Lato:wght@500&family=Nanum+Gothic:wght@400;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Lato:wght@500&family=Nanum+Gothic:wght@400;700;800&display=swap");
 
 :root {
   --dark-blue: #306fb4;
@@ -7,9 +7,9 @@
   --off-white: #f4f2f4;
   --border-blue: #3c5386;
   --grey: #4b4c4e;
-  --font-main-heading: 'Dela Gothic One', cursive;
-  --font-heading: 'Nanum Gothic';
-  --font-para: 'Lato';
+  --font-main-heading: "Dela Gothic One", cursive;
+  --font-heading: "Nanum Gothic";
+  --font-para: "Lato";
 }
 
 *,
@@ -21,7 +21,8 @@
 }
 
 body {
-  background: linear-gradient(to bottom, var(--dark-blue), var(--blue)) no-repeat;
+  background: linear-gradient(to bottom, var(--dark-blue), var(--blue))
+    no-repeat;
   height: 100%;
   min-height: 100vh;
 }
@@ -105,7 +106,7 @@ nav a {
   font-weight: 200;
 }
 
-.aqi-details {
+.air-details {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -279,6 +280,142 @@ tbody tr:nth-child(even) {
   margin-right: 1.5rem;
 }
 
+@media (max-width: 768px) {
+  .App-header {
+    gap: 2rem;
+    padding: 1rem 2rem;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .logo-heading {
+    font-size: 1.2rem;
+    line-height: 35px;
+  }
+
+  .form-container {
+    margin: 5rem 10% 2rem 10%;
+  }
+
+  .input-text {
+    font-size: small;
+  }
+
+  .air-details {
+    margin: 0 5% 3rem 5%;
+    padding: 3%;
+  }
+
+  .back-button,
+  .page-not-found-link {
+    font-size: small;
+    margin-bottom: 0.5rem;
+  }
+
+  .location-heading {
+    font-size: 1rem;
+  }
+
+  .location-para {
+    font-size: small;
+  }
+
+  .quality {
+    font-size: small;
+  }
+
+  .air-quality {
+    font-size: 1rem;
+  }
+
+  table,
+  tr,
+  td,
+  th {
+    padding: 0.5rem 1rem 0.5rem 0.2rem;
+    font-size: small;
+  }
+
+  .page-not-found {
+    margin: 5% 10%;
+    padding: 1rem 2rem 5rem 2rem;
+  }
+
+  .page-not-found-heading {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .page-not-found-link {
+    margin-bottom: 2rem;
+  }
+
+  .cities {
+    margin: 0 5% 3rem 5%;
+  }
+
+  .pagination li {
+    padding: 0.2rem 0.3rem;
+    font-size: small;
+  }
+
+  .pagination a {
+    padding: 0.2rem 0.3rem;
+  }
+
+  .city-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  .card-img img {
+    opacity: 0;
+  }
+
+  .city-list .card-img {
+    width: 112px;
+    height: 130px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+  }
+
+  .city-list .card {
+    padding: 0.5rem 0.5rem 2rem 0.5rem;
+    width: 9rem;
+    height: auto;
+  }
+
+  .city-list h1 {
+    font-size: 16px;
+    margin: auto;
+    align-self: flex-start;
+  }
+
+  .heading2 {
+    display: none;
+  }
+
+  .heading1 {
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .card-img {
+    width: 100%;
+    height: 100px;
+  }
+
+  .city-list a {
+    margin-right: 0.5rem;
+  }
+}
+/* 
 @media only screen and (max-width: 746px) {
   .App-header {
     justify-content: space-between;
@@ -339,7 +476,7 @@ tbody tr:nth-child(even) {
     padding: 0;
   }
 
-  .aqi-details {
+  .air-details {
     margin: 1rem 5% 5rem 5%;
   }
-}
+} */

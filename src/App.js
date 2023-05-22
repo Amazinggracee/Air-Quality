@@ -2,10 +2,10 @@ import './App.css';
 import { Link, Route, Routes } from 'react-router-dom';
 import { HiOutlineMenu } from 'react-icons/hi';
 import Home from './pages/Nav';
-import AqiDetail from './components/AqiDetail';
+import AirDetail from './components/AirDetail';
 import PageNotFound from './pages/PageNotFound';
 import logoIcon from './assets/logoIcon.png';
-import Aqi from './pages/Aqi';
+import Air from './pages/Air';
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
       <header className="App-header">
         <div className="logo">
           <img className="logo-image" src={logoIcon} alt="logo" />
-          <h1 className="logo-heading">irQualityIndex</h1>
+          <h1 className="logo-heading">AIR QUALITY</h1>
         </div>
         <nav>
           <HiOutlineMenu
@@ -27,8 +27,8 @@ function App() {
       </header>
       <Routes>
         <Route index element={<Home />} />
-        <Route path="/AqiDetail" element={<AqiDetail />} />
-        <Route path="/Aqi" element={<Aqi />} />
+        <Route path="/AirDetail" element={<AirDetail />} />
+        <Route path="/Air" element={<Air />} />
         <Route path="/PageNotFound" element={<PageNotFound />} />
       </Routes>
     </div>

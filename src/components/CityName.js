@@ -21,7 +21,7 @@ const InputLocation = (props) => {
       inputLocation(location);
       setlocation('');
     } else {
-      alert('Please enter input');
+      document.getElementsByClassName('form-container').textContent = 'Please enter input';
     }
   };
   const onChangeHandler = (event) => {
