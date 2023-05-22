@@ -10,7 +10,7 @@ const InputLocation = (props) => {
   const dispatch = useDispatch();
   const [location, setlocation] = useState('');
   const { ref } = usePlacesWidget({
-    apiKey: 'AIzaSyDYYRY4MTwwz70HfxEEuAVOThkMtnfGBbQ',
+    apiKey: 'd95f167d4b404b819885cfb9060d8358',
     options: {
       types: ['(cities)'],
     },

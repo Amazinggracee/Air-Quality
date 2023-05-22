@@ -1,5 +1,5 @@
 const api = 'http://api.openweathermap.org/data/2.5/air_pollution?';
-const apiId = '7ee6c59be0a3d1cda2a235909c744d19';
+const apiId = 'd95f167d4b404b819885cfb9060d8358';
 
 const getQuality = async (lat, lon) => {
   const response = await fetch(`${api}lat=${lat}&lon=${lon}&appid=${apiId}`)

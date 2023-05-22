@@ -1,4 +1,4 @@
-import map1 from './map1.jpeg';
+import map1 from './map1.jpg';
 import map2 from './map2.jpeg';
 import map3 from './map3.jpeg';
 import map4 from './map4.jpeg';
