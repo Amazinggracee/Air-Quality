@@ -3,7 +3,7 @@ import { FiSearch } from 'react-icons/fi';
 import { PropTypes } from 'prop-types';
 import { usePlacesWidget } from 'react-google-autocomplete';
 import { useDispatch } from 'react-redux';
-import { filterCities } from '../redux/cities/cities';
+import { filterCities } from '../redux/cities';
 
 const InputLocation = (props) => {
   const { inputLocation } = props;
@@ -21,7 +21,7 @@ const InputLocation = (props) => {
       inputLocation(location);
       setlocation('');
     } else {
-      alert('Please enter input');
+      document.getElementsByClassName('form-container').textContent = 'Please enter input';
     }
   };
   const onChangeHandler = (event) => {

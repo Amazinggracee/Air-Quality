@@ -1,95 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`testing PaginatedItems component should render the PaginatedItems component 1`] = `
+exports[`testing airDetail component should render the airDetail component 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div
-        class="cities"
-      >
-        <div
-          class="city-list"
-        />
-        <ul
-          aria-label="Pagination"
-          class="pagination"
-          role="navigation"
-        >
-          <li
-            class="previous disabled"
-          >
-            <a
-              aria-disabled="true"
-              aria-label="Previous page"
-              class=" "
-              rel="prev"
-              role="button"
-              tabindex="-1"
-            >
-              &lt; previous
-            </a>
-          </li>
-          <li
-            class="next"
-          >
-            <a
-              aria-disabled="false"
-              aria-label="Next page"
-              class=""
-              rel="next"
-              role="button"
-              tabindex="0"
-            >
-              next &gt;
-            </a>
-          </li>
-        </ul>
-      </div>
+      <div />
     </div>
   </body>,
   "container": <div>
-    <div
-      class="cities"
-    >
-      <div
-        class="city-list"
-      />
-      <ul
-        aria-label="Pagination"
-        class="pagination"
-        role="navigation"
-      >
-        <li
-          class="previous disabled"
-        >
-          <a
-            aria-disabled="true"
-            aria-label="Previous page"
-            class=" "
-            rel="prev"
-            role="button"
-            tabindex="-1"
-          >
-            &lt; previous
-          </a>
-        </li>
-        <li
-          class="next"
-        >
-          <a
-            aria-disabled="false"
-            aria-label="Next page"
-            class=""
-            rel="next"
-            role="button"
-            tabindex="0"
-          >
-            next &gt;
-          </a>
-        </li>
-      </ul>
-    </div>
+    <div />
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

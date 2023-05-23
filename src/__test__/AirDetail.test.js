@@ -3,17 +3,17 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 import store from '../redux/configureStore';
-import AqiDetail from '../components/AqiDetail';
+import AirDetail from '../components/AirDetail';
 
-describe('testing aqiDetail component', () => {
-  it('should render the aqiDetail component', () => {
-    const aqiDetail = render(
+describe('testing airDetail component', () => {
+  it('should render the airDetail component', () => {
+    const airDetail = render(
       <Provider store={store}>
         <BrowserRouter>
-          <AqiDetail />
+          <AirDetail />
         </BrowserRouter>
       </Provider>,
     );
-    expect(aqiDetail).toMatchSnapshot();
+    expect(airDetail).toMatchSnapshot();
   });
 });

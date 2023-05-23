@@ -1,6 +1,6 @@
 import { PropTypes } from 'prop-types';
 
-const AqiComponentTable = (props) => {
+const AirCondition = (props) => {
   const { components } = props;
   return (
     <table>
@@ -48,9 +48,9 @@ const AqiComponentTable = (props) => {
   );
 };
 
-AqiComponentTable.propTypes = {
+AirCondition.propTypes = {
   components: PropTypes.objectOf(
     PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   ).isRequired,
 };
-export default AqiComponentTable;
+export default AirCondition;

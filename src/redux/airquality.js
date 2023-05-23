@@ -1,36 +1,36 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import getQuality from '../../APIs/airApi';
-import getGeoLocation from '../../APIs/geoLocationApi';
+import getQuality from '../APIs/airApi';
+import getGeoLocation from '../APIs/geoLocationApi';
 
-const GET_AQI = 'POLLUTIONCHECK/airquality/GET_AQI';
+const GET_AIR = 'POLLUTIONCHECK/airquality/GET_AIR';
 const initialState = {
-  aqi: null,
+  air: null,
   error: '',
 };
-export const getAqi = createAsyncThunk(GET_AQI, async (location) => {
+export const getAir = createAsyncThunk(GET_AIR, async (location) => {
   // eslint-disable-next-line max-len
   const response = await getGeoLocation(location).then((response) => getQuality(response[0].lat, response[0].lon));
   return response;
 });
 
-const AqiSlice = createSlice({
-  name: 'AQI',
+const AirSlice = createSlice({
+  name: 'AIR',
   initialState,
   reducers: {
     resetState: () => initialState,
   },
   extraReducers: (builder) => {
     builder
-      .addCase(getAqi.fulfilled, (state, action) => ({
+      .addCase(getAir.fulfilled, (state, action) => ({
         ...state,
-        aqi: action.payload,
+        air: action.payload,
       }))
-      .addCase(getAqi.rejected, (state, action) => ({
+      .addCase(getAir.rejected, (state, action) => ({
         ...state,
         error: action.error.message,
       }));
   },
 });
 
-export const { resetState } = AqiSlice.actions;
-export default AqiSlice.reducer;
+export const { resetState } = AirSlice.actions;
+export default AirSlice.reducer;

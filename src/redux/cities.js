@@ -1,5 +1,5 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import getCitiesApi from '../../APIs/cities';
+import getCitiesApi from '../APIs/cities';
 
 const GET_CITIES = 'air-quality-index/cities/GET_CITIES';
 const initialState = {
