@@ -72,7 +72,7 @@
 
 
 ## 🚀 Live Demo and video <a name="live-demo"></a>
-https://amazinggracee.github.io/Air-Quality/
+https://air-quality-6caw.onrender.com
 
 - [Click Here](https://www.loom.com/share/976cd9a30fd54fe799e36a14946ac179)
 
