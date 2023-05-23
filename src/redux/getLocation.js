@@ -1,5 +1,5 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import getGeoLocation from '../../APIs/geoLocationApi';
+import getGeoLocation from '../APIs/geoLocationApi';
 
 const GET_LOCATION = 'POLLUTIONCHECK/getLocation/GET_LOCATION';
 const initialState = null;

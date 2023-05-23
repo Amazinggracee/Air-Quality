@@ -1,7 +1,7 @@
 import { configureStore } from '@reduxjs/toolkit';
-import AirSlice from './airquality/airquality';
-import LocationSlice from './getLocation/getLocation';
-import CitiesSlice from './cities/cities';
+import AirSlice from './airquality';
+import LocationSlice from './getLocation';
+import CitiesSlice from './cities';
 
 const store = configureStore({
   reducer: {

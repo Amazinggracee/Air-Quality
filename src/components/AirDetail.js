@@ -3,7 +3,7 @@ import { MdOutlineKeyboardBackspace } from 'react-icons/md';
 import { useNavigate } from 'react-router-dom';
 import AirQuality from './AirQuality';
 import AirCondition from './AirCondition';
-import { resetState } from '../redux/airquality/airquality';
+import { resetState } from '../redux/airquality';
 
 const AirDetail = () => {
   const navigate = useNavigate();

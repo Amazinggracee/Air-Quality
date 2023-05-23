@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { MdOutlineKeyboardBackspace } from 'react-icons/md';
 import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { resetState } from '../redux/airquality/airquality';
+import { resetState } from '../redux/airquality';
 
 const PageNotFound = () => {
   const dispatch = useDispatch();

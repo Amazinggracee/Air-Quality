@@ -1,10 +1,10 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
-import { getAir } from '../redux/airquality/airquality';
+import { getAir } from '../redux/airquality';
 import Air from './Air';
 import CityName from '../components/CityName';
-import { getLocation } from '../redux/getLocation/getLocation';
-import { getCities } from '../redux/cities/cities';
+import { getLocation } from '../redux/getLocation';
+import { getCities } from '../redux/cities';
 import PaginatedItems from './PaginatedItems';
 
 const Home = () => {
