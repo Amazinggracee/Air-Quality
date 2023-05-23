@@ -1,16 +1,14 @@
-<a name="readme-top">Air Quality</a>
-
+ <a name="readme-top">Air-Quality</a>
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
+- [📖 Learning objectives](#objectives)
   - [🛠 Built With](#built-with)
-    - [Video Walkthrough](#video-walkthrough)
-    - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
-  - [Install](#install)
   - [Usage](#usage)
   - [Run tests](#run-tests)
   - [Deployment](#triangular_flag_on_post-deployment)
@@ -19,65 +17,115 @@
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Air Quality<a name="about-project"></a>
+# 📖 [Air-Quality] <a name="about-project">Air-Quality</a>
 
+**[Air-Quality]** This online application enables users to monitor air quality in various cities worldwide. Furthermore, it offers information on the composition of air elements. The project integrates the Air Pollution API and utilizes the Google Place Autocomplete feature to present air quality data and retrieve cities from around the globe.
 
-**Air Quality**  "Space Travelers hub" is aa web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.
+## Learning objectives <a name="objectives">Learning objectives</a>
 
+- Use React documentation.
+- Use React components.
+- Use React props.
+- Use React Router.
+- Connect React and Redux.
+- Handle events in a React app.
+- Write integration tests with a React testing library.
+- Use styles in a React app.
+- Use React life cycle methods.
+- Apply React best practices and language style guides in code.
+- Use store, actions and reducers in React.
 
-## 🛠 Built With <a name="built-with">Create React App</a>
+## 🛠 Built With <a name="built-with"></a>
+- React
+- JavaScript
+- CSS
+- JS
+- Jest
 
+  
+<!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-- **Project setup with Create React App**
+-[ ] Create React App
+-[ ] reusable components: /components.
+-[ ] Setup your router inside of <App>
+-[ ] one page with a list of items that could be filtered by some parameters; in the example below, it's a list of metrics that can be filtered by the country (imagine a search field to introduce the country name like Italy, Croatia, etc.). This page should be your homepage.
+-[ ] one page for the item details
+-[ ] Home page
+    - When the page loads, the webapp shows the list of categories that could be filtered out by some parameter, for example by the category name.
+    - Along with the category name, you will display some numeric values per category that come from the API.
+    - When the user clicks (or taps) on a category item, the application navigates to the details page.
+-[ ] Details page
+    - In the details page, the webapp retrieves data from the API to show detailed data in the category.
+    - When the user clicks on the "Back" button (<), the user navigates to the home page.
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- LIVE DEMO AND THE DEPLOY -->
+### Home page
+
+
+## 🚀 Live Demo and video <a name="live-demo"></a>
+https://amazinggracee.github.io/Air-Quality/
+
+- [Click Here]()
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- GETTING STARTED -->
+
 ## 💻 Getting Started <a name="getting-started"></a>
 
-Try to have these in your local machine
+To get a local copy up and running follow these simple example steps.
 
-- Git and GitHub
-- VS Code or any code editor
+Clone the project unto your local machine
+Open the project with your code editor
+Run npm install to install all the dependencies
+Run npm start to start the server
+Open http://localhost:3000 to view it in the browser.
+
+## Test
+
+For tracking linter errors locally you need to follow these steps:
+
+- After cloning the project you need to run this command
+  > npm install
+   `This command will download all the dependencies of the project`
+
+- For tracking the linter errors in HTML file run:
+  > npx hint .
+
+- For tracking the linter errors in CSS file run:
+  > npx stylelint "**/*.{css,scss}"
+
+  - And For tracking the linter errors in JavaScript file run:
+  > npx eslint .
 
 ### Prerequisites
 
-In order to run this project you need 
-- A web browser
-- Code editor
+- Basic knowledge of HTML, CSS, and Javascript
+- Basic knowledge of Git and Github
+- Basic knowledge of Webpack
+- Basic knowledge of Jest
+- Basic knowledge of APIs
 
-### Setup
+To get the output of our project make sure you have google Chrome, Mozila or any other browser installed.
 
-Clone this repository to your desired folder:
+### Install 
 
-git clone (https://github.com/Amazinggracee/rocket-mission)
+> In order to install this project please go through the following steps:
 
-### Install
-
-Install this project using the cloned repo or download and use the files to your local machine.
-
-### Usage
-
-- Clone the repository first
-- Commnads to Run: 
-    - npm install
-    - npm run build
-    - npm start
-
-### Run tests
-
-- tests are included using Jest framework
-- commands to run:   npm run test 
-
-### Deployment
-
-You can deploy this project through Github Pages
+- Clone the repository
+- Run `npm install`
+- Run `npm start` to start the server
+- Run `npm run build` to build the project
+- Run `npm run test` to run the tests
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -85,26 +133,27 @@ You can deploy this project through Github Pages
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Naledi Dikgale**
 
-- GitHub: [@githubhandle](https://github.com/Naledi-Dikgale)
-- Twitter: [@twitterhandle](https://twitter.com/ChichiTheStar)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/naledi-dikgale-068423159/)
-- Website: https://naledi-dikgale.github.io/mobile-portfolio/
-
-**Amarachi Dimkpa**
+👤 **Amarachi Dimkpa**
 
 - GitHub: [@amazinggacee](https://github.com/Amazinggracee)
 - Twitter: [@amazinggaceu](https://twitter.com/amazinggraceu)
-- LinkedIn: [Amarachi Dimkpa](https://linkedin.com/in/amarachi-dimkpa-070643183)
-
+- LinkedIn: [Amarachi Dimkpa](https://linkedin.com/in/amarachi-dimkpa)
+- medium: [Amarachi Dimkpa](https://medium.com/@amazinggracee)
+- Angelist: [Amarachi Dimkpa](https://wellfound.com/profile/edit/overview)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🔭 Future Features <a name="future-features"></a>
+<!-- FUTURE FEATURES -->
 
-- [ ] **Changes will be made as comming project requirement.**
+## 🔭 Future Features <a name="future-features"></a>
+[ ] Add more APIs for population and hotels.
+### Key Features <a name="key-features"></a>
+
+
+
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -114,30 +163,37 @@ You can deploy this project through Github Pages
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://amazinggracee.github.io/Air-Quality/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project give a star to this repositiory.
+Give a ⭐️ if you like this project!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-- I would also like to thank Microverse for the guidance they made all the way up to this point. 
+- Original designer  Nelson Sakwa on Behance.
+- Thank you so much [Microvers](www.microverse.org)  and all the staff
+- Thanks to My coding Partners 
+- Thanks to My Morning-session-group and Standup-team Partners and
+- Thanks to Code Reviewers
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## ❓ FAQ <a name="faq"></a>
 
-- **Is it allowed to copy the contents of this project and use it for personal use?**
-
-  - This project is free for copying and reusing in any way you like.
+<!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](/LICENSE.md) licensed.
+This project is [MIT](./LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
