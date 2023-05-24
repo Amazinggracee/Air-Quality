@@ -74,7 +74,7 @@
 ## 🚀 Live Demo and video <a name="live-demo"></a>
 https://air-quality-lyqt.onrender.com/
 
-- [Click Here](https://www.loom.com/share/976cd9a30fd54fe799e36a14946ac179)
+- [Click Here](https://www.loom.com/share/ae186ef1e3af414d98192b9c474b3630)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

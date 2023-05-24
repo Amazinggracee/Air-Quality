@@ -5,7 +5,7 @@ import Air from './Air';
 import CityName from '../components/CityName';
 import { getLocation } from '../redux/getLocation';
 import { getCities } from '../redux/cities';
-import PaginatedItems from './PaginatedItems';
+import PaginatedItems from './PageItems';
 
 const Home = () => {
   const dispatch = useDispatch();
