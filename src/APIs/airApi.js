@@ -1,4 +1,4 @@
-const api = 'http://api.openweathermap.org/data/2.5/air_pollution?';
+const api = 'https://api.openweathermap.org/data/2.5/air_pollution?';
 const apiId = 'd95f167d4b404b819885cfb9060d8358';
 
 const getQuality = async (lat, lon) => {
