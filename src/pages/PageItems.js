@@ -4,7 +4,7 @@ import { PropTypes } from 'prop-types';
 import { useSelector } from 'react-redux';
 import CitiesCards from '../components/CitiesCards';
 
-const PaginatedItems = (props) => {
+const PageItems = (props) => {
   const { itemsPerPage, inputLocation } = props;
   const cities = useSelector((state) => state.CitiesSlice.filterCities);
   const [currentCities, setCurrentCities] = useState(null);
@@ -41,9 +41,9 @@ const PaginatedItems = (props) => {
   );
 };
 
-PaginatedItems.propTypes = {
+PageItems.propTypes = {
   itemsPerPage: PropTypes.number.isRequired,
   inputLocation: PropTypes.func.isRequired,
 };
 
-export default PaginatedItems;
+export default PageItems;

@@ -5,7 +5,7 @@ import Air from './Air';
 import CityName from '../components/CityName';
 import { getLocation } from '../redux/getLocation';
 import { getCities } from '../redux/cities';
-import PaginatedItems from './PageItems';
+import PageItems from './PageItems';
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -22,7 +22,7 @@ const Home = () => {
     <div>
       <CityName inputLocation={inputLocation} />
       <Air airData={airData} error={error} />
-      <PaginatedItems itemsPerPage={24} inputLocation={inputLocation} />
+      <PageItems itemsPerPage={24} inputLocation={inputLocation} />
     </div>
   );
 };
